@@ -4,8 +4,6 @@ import java.util.ArrayList;
 public abstract class Piece {
     private final String name;
     private final String color;
-    private boolean hasMoved = false;
-
 
     public Piece(String name, String color) {
         this.name = name;
@@ -20,14 +18,6 @@ public abstract class Piece {
 
     public String getName() {
         return name;
-    }
-
-    public boolean hasMoved() {
-        return hasMoved;
-    }
-
-    public void moveFirstTime() {
-        this.hasMoved = true;
     }
 
     public String toString() {
